@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:notation="http://www.eclipse.org/gmf/runtime/1.0.2/notation" xmlns:sgraph="http://www.yakindu.org/sct/sgraph/2.0.0">
-  <sgraph:Statechart xmi:id="_l5ZAoJuyEeetFYKaPEeJ8Q" specification="interface:&#xA;in event buttonA&#xA;in event buttonB&#xA;in event buttonReleasedB&#xA;in event buttonC&#xA;in event buttonReleasedC&#xA;in event buttonD&#xA;in event batteryInserted&#xA;in event batteryRemoved&#xA;in event batteryDies&#xA;&#xA;interface Main:&#xA;var T : integer // Alarm time&#xA;operation isWholeHour() : boolean&#xA;var Sec : integer&#xA;var OneMin : integer&#xA;var TenMin : integer&#xA;var Hour : integer&#xA;var Month : integer&#xA;var Day : integer&#xA;var Year : integer&#xA;var Mode : integer&#xA;var isStopwatchRunning : boolean&#xA;&#xA;interface Alarm:&#xA;var status : string&#xA;&#xA;interface Chime:&#xA;var status : string&#xA;&#xA;interface Light:&#xA;&#xA;interface Power:&#xA;in event batteryWeakens" name="WatchCtrl">
+  <sgraph:Statechart xmi:id="_l5ZAoJuyEeetFYKaPEeJ8Q" specification="interface:&#xA;in event buttonA&#xA;in event buttonB&#xA;in event buttonReleasedB&#xA;in event buttonC&#xA;in event buttonReleasedC&#xA;in event buttonD&#xA;in event batteryInserted&#xA;in event batteryRemoved&#xA;in event batteryDies&#xA;&#xA;interface Main:&#xA;var T : integer // Alarm time&#xA;operation isWholeHour() : boolean&#xA;var Sec : integer&#xA;var OneMin : integer&#xA;var TenMin : integer&#xA;var Hour : integer&#xA;var Month : integer&#xA;var Day : integer&#xA;var Year : integer&#xA;var Mode : integer&#xA;var isStopwatchRunning : boolean&#xA;&#xA;interface Light:&#xA;&#xA;interface Power:&#xA;in event batteryWeakens" name="WatchCtrl">
     <regions xmi:id="_l5ZnspuyEeetFYKaPEeJ8Q" name="main region">
       <vertices xsi:type="sgraph:Entry" xmi:id="_l5aOyZuyEeetFYKaPEeJ8Q">
         <outgoingTransitions xmi:id="_gSogkJu_EeetFYKaPEeJ8Q" specification="" target="_es7uEJu_EeetFYKaPEeJ8Q"/>
@@ -57,14 +57,14 @@
                   <vertices xsi:type="sgraph:Entry" xmi:id="_C62U8JvEEeetFYKaPEeJ8Q" incomingTransitions="_EMp7EJvEEeetFYKaPEeJ8Q" kind="SHALLOW_HISTORY"/>
                 </regions>
               </vertices>
-              <vertices xsi:type="sgraph:State" xmi:id="_rn4vUJvEEeetFYKaPEeJ8Q" specification="exit /&#xA;Chime.status = &quot;&quot;" name="Alarm" incomingTransitions="_AOrNIJvFEeetFYKaPEeJ8Q _iHkaMJvFEeetFYKaPEeJ8Q _ya-h0JvGEeetFYKaPEeJ8Q">
+              <vertices xsi:type="sgraph:State" xmi:id="_rn4vUJvEEeetFYKaPEeJ8Q" specification="" name="Alarm" incomingTransitions="_AOrNIJvFEeetFYKaPEeJ8Q _iHkaMJvFEeetFYKaPEeJ8Q _ya-h0JvGEeetFYKaPEeJ8Q">
                 <outgoingTransitions xmi:id="_bmddoJvFEeetFYKaPEeJ8Q" specification="buttonC" target="_RvdjVpvFEeetFYKaPEeJ8Q"/>
                 <outgoingTransitions xmi:id="_5SRJwJvGEeetFYKaPEeJ8Q" specification="buttonA" target="_GBDbcJvFEeetFYKaPEeJ8Q"/>
                 <regions xmi:id="_rn59cpvEEeetFYKaPEeJ8Q" name="r1">
-                  <vertices xsi:type="sgraph:State" xmi:id="_u5qCEJvEEeetFYKaPEeJ8Q" specification="entry /&#xA;Alarm.status = &quot;Off&quot;" name="Off" incomingTransitions="_4j2PcJvEEeetFYKaPEeJ8Q _7uV1gJvEEeetFYKaPEeJ8Q">
+                  <vertices xsi:type="sgraph:State" xmi:id="_u5qCEJvEEeetFYKaPEeJ8Q" specification="" name="Off" incomingTransitions="_4j2PcJvEEeetFYKaPEeJ8Q _7uV1gJvEEeetFYKaPEeJ8Q">
                     <outgoingTransitions xmi:id="_2NeN8JvEEeetFYKaPEeJ8Q" specification="buttonD" target="_wtmE4JvEEeetFYKaPEeJ8Q"/>
                   </vertices>
-                  <vertices xsi:type="sgraph:State" xmi:id="_wtmE4JvEEeetFYKaPEeJ8Q" specification="entry /&#xA;Alarm.status = &quot;On&quot;" name="On" incomingTransitions="_2NeN8JvEEeetFYKaPEeJ8Q">
+                  <vertices xsi:type="sgraph:State" xmi:id="_wtmE4JvEEeetFYKaPEeJ8Q" specification="" name="On" incomingTransitions="_2NeN8JvEEeetFYKaPEeJ8Q">
                     <outgoingTransitions xmi:id="_4j2PcJvEEeetFYKaPEeJ8Q" specification="buttonD" target="_u5qCEJvEEeetFYKaPEeJ8Q"/>
                   </vertices>
                   <vertices xsi:type="sgraph:Entry" xmi:id="_6wMLMJvEEeetFYKaPEeJ8Q" kind="SHALLOW_HISTORY">
@@ -72,13 +72,13 @@
                   </vertices>
                 </regions>
               </vertices>
-              <vertices xsi:type="sgraph:State" xmi:id="_GBDbcJvFEeetFYKaPEeJ8Q" specification="exit /&#xA;Chime.status = &quot;&quot;" name="Chime" incomingTransitions="_5SRJwJvGEeetFYKaPEeJ8Q">
+              <vertices xsi:type="sgraph:State" xmi:id="_GBDbcJvFEeetFYKaPEeJ8Q" specification="" name="Chime" incomingTransitions="_5SRJwJvGEeetFYKaPEeJ8Q">
                 <outgoingTransitions xmi:id="_V452MJvLEeetFYKaPEeJ8Q" specification="buttonA" target="_Dyf8YJvJEeetFYKaPEeJ8Q"/>
                 <regions xmi:id="_GBECgpvFEeetFYKaPEeJ8Q" name="r1">
-                  <vertices xsi:type="sgraph:State" xmi:id="_GBECg5vFEeetFYKaPEeJ8Q" specification="entry /&#xA;Chime.status = &quot;Off&quot;" name="Off" incomingTransitions="_GBFQoZvFEeetFYKaPEeJ8Q _GBFQppvFEeetFYKaPEeJ8Q">
+                  <vertices xsi:type="sgraph:State" xmi:id="_GBECg5vFEeetFYKaPEeJ8Q" specification="" name="Off" incomingTransitions="_GBFQoZvFEeetFYKaPEeJ8Q _GBFQppvFEeetFYKaPEeJ8Q">
                     <outgoingTransitions xmi:id="_GBEpkZvFEeetFYKaPEeJ8Q" specification="buttonD" target="_GBEplZvFEeetFYKaPEeJ8Q"/>
                   </vertices>
-                  <vertices xsi:type="sgraph:State" xmi:id="_GBEplZvFEeetFYKaPEeJ8Q" specification="entry /&#xA;Chime.status = &quot;On&quot;" name="On" incomingTransitions="_GBEpkZvFEeetFYKaPEeJ8Q">
+                  <vertices xsi:type="sgraph:State" xmi:id="_GBEplZvFEeetFYKaPEeJ8Q" specification="" name="On" incomingTransitions="_GBEpkZvFEeetFYKaPEeJ8Q">
                     <outgoingTransitions xmi:id="_GBFQoZvFEeetFYKaPEeJ8Q" specification="buttonD" target="_GBECg5vFEeetFYKaPEeJ8Q"/>
                   </vertices>
                   <vertices xsi:type="sgraph:Entry" xmi:id="_GBFQpZvFEeetFYKaPEeJ8Q" kind="SHALLOW_HISTORY">
@@ -144,10 +144,10 @@
         </regions>
         <regions xmi:id="_Yla9QZu_EeetFYKaPEeJ8Q" name="AlarmStatus">
           <vertices xsi:type="sgraph:State" xmi:id="_ZvnDAJvAEeetFYKaPEeJ8Q" name="Disabled" incomingTransitions="_c35CkJvAEeetFYKaPEeJ8Q _infCoJvAEeetFYKaPEeJ8Q">
-            <outgoingTransitions xmi:id="_gUj9wJvAEeetFYKaPEeJ8Q" specification="buttonD&#xA;[Alarm.status == &quot;Off&quot;]" target="_a-i7UJvAEeetFYKaPEeJ8Q"/>
+            <outgoingTransitions xmi:id="_gUj9wJvAEeetFYKaPEeJ8Q" specification="buttonD&#xA;[active(&#xA;&#x9;WatchCtrl.main_region.Alive.Main.Displays.r1.Alarm.r1.Off&#xA;)]" target="_a-i7UJvAEeetFYKaPEeJ8Q"/>
           </vertices>
           <vertices xsi:type="sgraph:State" xmi:id="_a-i7UJvAEeetFYKaPEeJ8Q" name="Enabled" incomingTransitions="_gUj9wJvAEeetFYKaPEeJ8Q">
-            <outgoingTransitions xmi:id="_infCoJvAEeetFYKaPEeJ8Q" specification="buttonD&#xA;[Alarm.status == &quot;On&quot;]" target="_ZvnDAJvAEeetFYKaPEeJ8Q"/>
+            <outgoingTransitions xmi:id="_infCoJvAEeetFYKaPEeJ8Q" specification="buttonD&#xA;[active(&#xA;&#x9;WatchCtrl.main_region.Alive.Main.Displays.r1.Alarm.r1.On&#xA;)]" target="_ZvnDAJvAEeetFYKaPEeJ8Q"/>
           </vertices>
           <vertices xsi:type="sgraph:Entry" xmi:id="_cWLcoJvAEeetFYKaPEeJ8Q">
             <outgoingTransitions xmi:id="_c35CkJvAEeetFYKaPEeJ8Q" specification="" target="_ZvnDAJvAEeetFYKaPEeJ8Q"/>
@@ -155,13 +155,13 @@
         </regions>
         <regions xmi:id="_IpfPkJvAEeetFYKaPEeJ8Q" name="ChimeStatus">
           <vertices xsi:type="sgraph:State" xmi:id="_EEuNcJvMEeetFYKaPEeJ8Q" name="Disabled" incomingTransitions="_F5puwJvMEeetFYKaPEeJ8Q _jI4CAJvMEeetFYKaPEeJ8Q">
-            <outgoingTransitions xmi:id="_IrHw0JvMEeetFYKaPEeJ8Q" specification="buttonD &#xA;[Chime.status == &quot;Off&quot;]" target="_oSCUMJvMEeetFYKaPEeJ8Q"/>
+            <outgoingTransitions xmi:id="_IrHw0JvMEeetFYKaPEeJ8Q" specification="buttonD &#xA;[active(WatchCtrl.main_region.Alive.Main.Displays.r1.Chime.r1.Off)]" target="_oSCUMJvMEeetFYKaPEeJ8Q"/>
           </vertices>
           <vertices xsi:type="sgraph:Entry" xmi:id="_FWORkJvMEeetFYKaPEeJ8Q">
             <outgoingTransitions xmi:id="_F5puwJvMEeetFYKaPEeJ8Q" specification="" target="_EEuNcJvMEeetFYKaPEeJ8Q"/>
           </vertices>
           <vertices xsi:type="sgraph:State" xmi:id="_HuYbwJvMEeetFYKaPEeJ8Q" name="Enabled">
-            <outgoingTransitions xmi:id="_jI4CAJvMEeetFYKaPEeJ8Q" specification="buttonD &#xA;[Chime.status == &quot;On&quot;]" target="_EEuNcJvMEeetFYKaPEeJ8Q"/>
+            <outgoingTransitions xmi:id="_jI4CAJvMEeetFYKaPEeJ8Q" specification="buttonD &#xA;[active(WatchCtrl.main_region.Alive.Main.Displays.r1.Chime.r1.On)]" target="_EEuNcJvMEeetFYKaPEeJ8Q"/>
             <regions xmi:id="_HuZp4pvMEeetFYKaPEeJ8Q" name="r1">
               <vertices xsi:type="sgraph:State" xmi:id="_oSCUMJvMEeetFYKaPEeJ8Q" name="Quiet" incomingTransitions="_DlmMAJvNEeetFYKaPEeJ8Q _IrHw0JvMEeetFYKaPEeJ8Q">
                 <outgoingTransitions xmi:id="_sOC2wJvMEeetFYKaPEeJ8Q" specification="[Main.isWholeHour]" target="_qAZ6gJvMEeetFYKaPEeJ8Q"/>

@@ -1,0 +1,11 @@
+GeneratorModel for yakindu::java {
+
+	statechart WatchCtrl {
+
+		feature Outlet {
+			targetProject = "watch"
+			targetFolder = "src-gen"
+			libraryTargetFolder = "src-gen"
+		}
+	}
+}
